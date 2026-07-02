@@ -4,12 +4,9 @@
 
 **Bulk SSH credential validation + lightweight post-login enumeration — in one file.**
 
-*"I'm sorry Dave, I'm afraid I can't do that." — well, actually, this one can.*
-
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/)
 [![Dependencies](https://img.shields.io/badge/deps-paramiko-informational.svg)](https://www.paramiko.org/)
 [![Platform](https://img.shields.io/badge/runs%20on-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](#-license)
 [![Authorized use only](https://img.shields.io/badge/use-authorized%20testing%20only-critical.svg)](#-legal--authorized-use-only)
 
 </div>
@@ -54,7 +51,7 @@ Full report written to: clockwork_20260702_120000.txt
 ## Install
 
 ```bash
-git clone https://github.com/<you>/clockwork.git
+git clone https://github.com/didyoureally/clockwork.git
 cd clockwork
 pip install paramiko
 ```
@@ -183,7 +180,3 @@ To stay fast and quiet-ish, Clockwork bundles all checks into **one read-only PO
 - JSON / CSV report output for piping into other tooling
 - CIDR / range expansion in the targets file
 - A native Windows enumeration profile (PowerShell one-liners)
-
-## 📄 License
-
-Suggested: **MIT** — add a `LICENSE` file to make it official. Provided as-is, with no warranty. Use responsibly and legally.
