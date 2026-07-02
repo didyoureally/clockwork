@@ -16,6 +16,8 @@ Point Clockwork at a list of hosts and a single set of credentials. It concurren
 
 Think of it as **credential spray-check + a mini-LinPEAS triage**, small enough to read in one sitting.
 
+The idea here is you've obtained or guessed a credential set (leaked dump, AD kerberoasting, default password sweep) and want to know which machines in a /24 or fleet accept it, then immediately get a HIGH/INTERESTING/INFO triage for each. The alternative workflow — Hydra to confirm, then SSH into each success, then upload LinPEAS, then wait, then collect is tedious to do at scale. Clockwork collapses those steps.
+
 ```
 [1/6] 10.0.0.11         SUCCESS [passwordless sudo] [3 HIGH]
 [2/6] 10.0.0.12         SUCCESS [1 HIGH]
