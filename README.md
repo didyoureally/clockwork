@@ -11,13 +11,6 @@
 
 </div>
 
----
-
-> ## ⚠️ Legal — authorized use only
-> Clockwork is a security-testing tool. **Only run it against systems you own or have explicit, written permission to test.** Unauthorized access to computer systems is illegal in most jurisdictions. You are solely responsible for how you use it.
-
----
-
 ## What it does
 
 Point Clockwork at a list of hosts and a single set of credentials. It concurrently checks which hosts you can log into, and — on the ones that accept the login — can optionally run a command, hunt for high-value files, and perform a set of quick privilege-escalation checks. Everything lands in a clean, readable report.
@@ -65,8 +58,6 @@ Create a `targets.txt` (one host per line; blank lines and `#` comments are igno
 ```
 10.0.0.11
 10.0.0.12
-# staging box, skip for now
-# 10.0.0.99
 10.0.0.13
 ```
 
@@ -153,20 +144,6 @@ Loot downloaded:
 ```
 
 Findings are ranked **HIGH → INTERESTING → INFO**, and every HIGH is rolled up into the "quick wins" block at the top so you know where to look first.
-
-## 🧪 Try it safely (local lab)
-
-The repo ships with `create-ssh-boxes.sh`, which spins up three throwaway Docker SSH servers (user `testuser` / password `testpassword`, plus a generated keypair) so you can exercise Clockwork end-to-end without touching anything real:
-
-```bash
-./create-ssh-boxes.sh                 # build + start 3 boxes on ports 2201-2203
-printf 'localhost\n' > targets.txt
-
-python3 clockwork.py -t targets.txt -u testuser -p testpassword \
-    --port 2201 --enum --privesc
-
-./create-ssh-boxes.sh clean           # tear everything down
-```
 
 ## How enumeration works
 
