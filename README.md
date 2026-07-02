@@ -1,5 +1,4 @@
 <div align="center">
-
 # 🕰️ Clockwork
 
 **Bulk SSH credential validation + lightweight post-login enumeration — in one file.**
