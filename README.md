@@ -1,5 +1,4 @@
 <div align="center">
-    
 # 🕰️ Clockwork
 
 **Bulk SSH credential validation + lightweight post-login enumeration — in one file.**
@@ -7,7 +6,6 @@
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/)
 [![Dependencies](https://img.shields.io/badge/deps-paramiko-informational.svg)](https://www.paramiko.org/)
 [![Platform](https://img.shields.io/badge/runs%20on-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)]()
-[![Authorized use only](https://img.shields.io/badge/use-authorized%20testing%20only-critical.svg)](#-legal--authorized-use-only)
 
 </div>
 
